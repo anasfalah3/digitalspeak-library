@@ -2,6 +2,7 @@ import thibautcryptobourse from "@/public/thibaut-crypto-bourse.jpg";
 import smuslim from "@/public/smuslim.jpg";
 import testi1 from "@/public/testi1.jpg";
 import testi2 from "@/public/testi2.jpg";
+import testimonial3 from "@/public/testimonial3.png";
 
 export const testimonials = [
   {
@@ -1525,5 +1526,494 @@ jQuery(document).ready(function($){
         z-index: 4;
       }
     `,
+  },
+    {
+    name: "testimonial3",
+    image: testimonial3,
+    html: `
+    <div class="container Sl_containerTEM">
+    <div class="testiSlideLiTEM">
+
+        <div>
+            <div class="TContainerSLiTEM TCSLiTEM1">
+                <div><img src="https://storage.googleapis.com/msgsndr/UTKxQcOgC1KM8MaPnCZU/media/68346d6aaf0e811d94288364.png"></div>
+                <h4>Pack “IA Booster” à télécharger immédiatement</h4>
+                <h5>Lorem Ipsum si asmet</h5>     
+            </div>  
+        </div>
+
+
+
+
+        <div>
+            <div class="TContainerSLiTEM TCSLiTEM2">
+                <div><img src="https://storage.googleapis.com/msgsndr/UTKxQcOgC1KM8MaPnCZU/media/68346d6a016c6950cdf65da7.png"></div>
+                <h4>- Prompts GPT 100% personnalisés (à copier-coller dans ton IA) pour gagner 5H/Semaine</h4>
+                <h5>Lorem Ipsum si asmet</h5>        
+            </div>  
+        </div>
+
+
+
+        <div>
+            <div class="TContainerSLiTEM TCSLiTEM3">
+                <div><img src="https://storage.googleapis.com/msgsndr/UTKxQcOgC1KM8MaPnCZU/media/68346d6ae238fdad8b17b28d.png"></div>
+                <h4>Templates de prompts ultra-efficaces pour Linkedin, Contenu, Acquisition, Closing</h4>
+                <h5>Lorem Ipsum si asmet</h5>             
+            </div>  
+        </div>
+
+
+
+        <div>
+            <div class="TContainerSLiTEM TCSLiTEM4">
+                <div><img src="https://storage.googleapis.com/msgsndr/UTKxQcOgC1KM8MaPnCZU/media/68346d6a2539262ba38beb9d.png"></div>
+                <h4>Accès à une bibliothèque de cas concertes IA + business qu’utilise Jean-Briac au quotidien</h4>
+                <h5>Lorem Ipsum si asmet</h5>  
+            </div>  
+        </div>
+
+
+
+
+    </div>
+</div>
+  `,
+    css: `
+     
+  body .Sl_containerTEM{width: 100% !important; margin: auto !important; display: block !important; overflow: hidden;}
+
+  .testiSlideLiTEM .TContainerSLiTEM{ 
+      filter: grayscale(1) brightness(1);
+      transform: scale(.7); 
+      pointer-events: none;
+      transition: transform 1s, filter 1s;
+  }
+  .testiSlideLiTEM .slick-active .TContainerSLiTEM{ transform: scale(.7); }
+
+  .testiSlideLiTEM .slick-active.slick-center .TContainerSLiTEM{ 
+      transform: scale(1) !important; 
+      filter: none !important; 
+      pointer-events: auto; 
+      z-index: 1;
+  }    
+  
+  .testiSlideLiTEM .slick-slide{ transition: transform 1.2s; }
+  .testiSlideLiTEM .slick-slide:has(+.slick-center){
+       transform: translateX(120px);
+  }
+
+  .testiSlideLiTEM .slick-slide.slick-active.slick-center{ transform: none; }
+  .testiSlideLiTEM .slick-center + .slick-slide{
+       transform: translateX(-120px);
+  }
+
+
+
+  /************/
+
+  .TContainerSLiTEM{ 
+      /* padding: 1% 2%;  position: relative; */
+  }
+.TContainerSLiTEM div{
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+  .TContainerSLiTEM img{
+      width: 100% !important;
+      cursor: pointer;
+      margin: auto;
+      transition: transform .5s, opacity .5s
+  }
+  .TContainerSLiTEM div:hover img{ 
+      opacity: 1;
+      transform: scale(1.1) rotate(-5deg) !important; 
+  }
+  
+
+
+  .testiSlideLiTEM .slick-slide:has(+.slick-center) .TContainerSLiTEM h4, .testiSlideLiTEM .slick-center + .slick-slide .TContainerSLiTEM h4, .testiSlideLiTEM .slick-slide:has(+.slick-center) .TContainerSLiTEM h5, .testiSlideLiTEM .slick-center + .slick-slide .TContainerSLiTEM h5{
+      opacity: 0;
+  }
+
+  .TContainerSLiTEM h4, .TContainerSLiTEM h5{ 
+      margin: 0 auto !important; 
+      color: white !important;
+      text-align: center;
+      transition: opacity 1s;
+  }
+  .TContainerSLiTEM h4{
+      margin-top: 18px !important;
+      font-family: 'Montserrat' !important;
+      font-weight:bold;
+      font-size: 18px;
+  }
+  .TContainerSLiTEM h5{ 
+      margin-top: 5px !important;
+      font-family: "Jokker", Sans-serif;
+      font-size: 12px; 
+      display: none;
+  }
+
+
+
+  @media (min-width: 850px){
+
+      .Price_Content div.For_2IMG img{ width: 200px !important; display: inline-block; margin: 2% }
+      /* .Price_Content div.For_3IMG img{ width: 30% !important; display: inline-block;  margin: 2%} */
+
+  }
+
+
+
+  @media (max-width: 850px){
+
+      .TContainerSLiTEM{ margin: 0 auto; height: auto; }
+      /* .TContainerSLiTEM img { width: 50px !important;} */
+      .DS_T_row1_DS{ padding-bottom: 30px !important; }
+      .DS_Sl_row{ bottom: -15px !important; left: 0; right: 0; margin: auto; }
+      .testiSlideLiTEM ul.slick-dots{ margin: 10px auto 0 !important; padding: 0 0 0 0px !important }
+      
+      .TContainerSLiTEM h4{ font-size: 14px; }
+      .TContainerSLiTEM h5{ font-size: 12px; }        
+
+  }
+
+  @media (max-width: 450px){
+      
+      body .Sl_containerTEM{ overflow: visible; }
+
+  }
+
+
+
+/********************************/
+
+
+  /*.TContainerSLiTEM div{ display: contents; }*/
+    .TContainerSLiTEM{position:relative;}
+    .TContainerSLiTEM:before{
+    content: "";
+      width: 100px;
+      height: 100px;
+      display: block;
+      position: absolute;
+      margin: auto;
+      background: #E7E7E7;
+      top:-80px;left:0;right:0; bottom:0;
+      transform: scale(2.2);
+      border-radius:50px;
+      transition: 0.5s;
+      z-index: -1;
+    }
+  .testiSlideLiTEM .TContainerSLiTEM{ opacity: .4; pointer-events: none; transition: opacity .5s;}
+  .testiSlideLiTEM .slick-active.slick-center .TContainerSLiTEM{ opacity: 1 !important; pointer-events: auto;}    
+  
+  .TContainerSLiTEM[class] div{
+      position: relative;
+      width: 150px !important; height: 180px !important; 
+      margin: 0 auto !important;
+      /* clip-path: circle(50% at 50% 50%); */
+      transition: transform .5s, filter .5s;
+  }
+
+  
+
+  .DS_T_row1_P_DS { margin: 15px auto 0; }
+
+/*    @media only screen and (min-width: 959px) and (max-width: 1440px){*/
+  @media (min-width: 959px){
+
+      .DS_T_row1_DS { width: 85% !important; margin: auto !important; }
+  }
+
+  @media (min-width: 769px){
+
+      .TContainerSLiTEM[class] div{ 
+          width: 200px !important; 
+          height: 260px !important; 
+      }   
+         
+  }
+
+  @media (max-width: 769px){
+
+    .TContainerSLiTEM:before{
+        content: "";
+        width: 70px;
+        height: 70px;
+        top:-100px;
+    }
+      
+      .testiSlideLiTEM .slick-slide:has(+.slick-center){
+           transform: translateX(50px);
+      }
+
+      .testiSlideLiTEM .slick-center + .slick-slide{
+           transform: translateX(-50px);
+      }
+
+
+      .testiSlideLiTEM ul.slick-dots button{ font-size: 16px } 
+
+      .DS_T_row1_DS .elementor-column{ width: 100% !important }
+      .DS_T_row1_DS .elementor-column *{ text-align: center !important }
+      .DS_T_row1_P_DS { width: 90% !important; min-height: 65px; margin: 10px auto 0; }
+
+      .testiSlideLiTEM ul.slick-dots button { width: 23px !important;}
+      .testiSlideLiTEM .slick-dots li.slick-active button{ font-size: 30px !important; transform: translateY(-7px) !important }
+  }
+
+
+
+
+
+  /************/
+
+  .testiSlideLiTEM ul.slick-dots{ 
+      position: relative;
+      width: fit-content;
+      display: flex;
+      margin-top: 20px; 
+      padding: 0 0 0 260px;
+      align-content: center;
+      justify-content: center;
+
+  }
+  .testiSlideLiTEM ul.slick-dots button  { 
+      width: 35px; height: 30px;
+      display: block; color: black; 
+      font-family: "GalakPro", sans-serif !important;
+      font-size: 14px; font-weight: 900;
+      background: transparent; 
+      border: none; 
+      opacity: .2; outline: none;
+      transition: font-size .3s, opacity .3s, color .3s;
+
+  }
+
+  .testiSlideLiTEM .slick-dots li.slick-active button{ 
+      font-size: 42px; opacity: 1; 
+      transform: translateY(-15px);
+      color: var(--DS_PR_color_DS);
+  }
+  .testiSlideLiTEM .slick-dots li{ list-style: none !important }
+
+  .DS_Sl_row{ 
+      width: 250px; height: 5px; 
+      position: absolute; bottom: 15px;
+      background-color: #efefef;
+      background-image: linear-gradient(33deg, var(--DS_PR_color_DS) 50%, #1f1911);
+      background-repeat: no-repeat !important;
+      background-size: var(--data_ss);
+      border-radius: 10px;
+      transition: background-size .3s;
+      z-index: -1;
+  }
+
+  /*.slick-slide.slick-active {opacity: 1 !important}*/
+  .slick-slider {
+      /*opacity: 12%;*/
+      position: relative;
+      display: block;
+      box-sizing: border-box;
+      user-select: none;
+      -webkit-touch-callout: none;
+      -khtml-user-select: none;
+      -ms-touch-action: pan-y;
+      touch-action: pan-y;
+      -webkit-tap-highlight-color: transparent;
+      transition: all 0.6s
+  }
+  .slick-list {
+      position: relative;
+      display: block;
+      /*overflow: hidden;*/
+      overflow: visible;
+      margin: 0;
+      padding: 0;
+  }
+  .slick-list:focus {
+      outline: none;
+  }
+  .slick-list.dragging {
+      cursor: pointer;
+      cursor: hand;
+  }
+  .slick-slider .slick-track, .slick-slider .slick-list {
+      transform: translate3d(0, 0, 0);
+  }
+  .slick-track {
+      position: relative;
+      top: 0;
+      left: 0;
+      display: block;
+  }
+  .slick-track:before, .slick-track:after {
+      display: table;
+      content: '';
+  }
+  .slick-track:after {
+      clear: both;
+  }
+  .slick-loading .slick-track {
+      visibility: hidden;
+  }
+  .Sl_containerTEM .slick-slide {
+      display: none;
+      float: left;
+      height: 90%;
+      min-height: 1px;
+      /* box-shadow: 0 0 3px #d2d2d28c; */
+      /* margin: 2px 22px; */
+      margin: 10px 0;
+      width:100%;
+  }
+  .slick-slide img {
+      display: block;
+  }
+  .slick-slide.slick-loading img {
+      display: none;
+  }
+  .slick-slide.dragging img {
+      pointer-events: none;
+  }
+  .slick-initialized .slick-slide {
+      display: block;
+  }
+  .slick-loading .slick-slide {
+      visibility: hidden;
+  }
+  .slick-vertical .slick-slide {
+      display: block;
+      height: auto;
+      border: 1px solid transparent;
+  }
+  .slick-btn.slick-hidden {
+      display: none;
+  }
+  .Sl_containerTEM .slick-prev, .Sl_containerTEM .slick-next {
+      font-size: 0;
+      line-height: 0;
+      position: absolute;
+      top:0;
+      bottom: 0;
+      margin: auto;
+      display: block;
+      width: 60px !important;
+      height: 60px !important;
+      padding: 0;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      background: transparent;
+      transition: opacity .5s;
+  }
+  .Sl_containerTEM .slick-prev:hover, .Sl_containerTEM .slick-next:hover{ opacity: 1 !important }
+
+  .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+      color: transparent;
+      outline: none;
+      background: transparent;
+  }
+  .slick-prev:hover:before, .slick-prev:focus:before, .slick-next:hover:before, .slick-next:focus:before {
+      opacity: 1;
+    filter: brightness(0) saturate(100%) invert(42%) sepia(35%) saturate(5509%) hue-rotate(2deg) brightness(105%) contrast(103%);
+  }
+  .slick-prev:before, .slick-next:before {
+      /*font-family: "FontAwesome";*/
+      font-size: 25px;
+      margin: auto !important;
+      text-align: center;
+      width: 0;
+      display: block;
+      line-height: 1;
+      opacity: 1;
+      color: #0029ff94;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+  }
+
+  .Sl_containerTEM .slick-prev {
+      left:10%;
+  }
+  .Sl_containerTEM .slick-prev:before, .Sl_containerTEM .slick-next:before { 
+      width: fit-content; padding: 30%; 
+      background-repeat: no-repeat !important; background-position: center !important; 
+      background-size: contain !important;
+      transition:.3s;
+      position:relative;
+      z-index:2;
+  }
+  .Sl_containerTEM .slick-prev:before {
+      content: "";
+      background: url(https://storage.googleapis.com/msgsndr/UTKxQcOgC1KM8MaPnCZU/media/68347a82a0411e437ce1135b.svg);
+  }
+  .Sl_containerTEM .slick-next {
+      right: 10%;
+  }
+  .Sl_containerTEM .slick-next:before {
+      content: "";
+      background: url(https://storage.googleapis.com/msgsndr/UTKxQcOgC1KM8MaPnCZU/media/68347a82c5acca7a535f31da.svg);
+      margin-left: 0 !important
+  }
+  @media (min-width: 768px) {
+      .Sl_Head * {
+          display: inline-block !important;
+      }
+  }
+@media (max-width: 850px) {
+  .testiSlideLiTEM { width:100%; }
+  .testiSlideLiTEM div{ width:100%; }
+
+}
+
+@media (max-width: 768px) {
+  .Sl_containerTEM .slick-prev, .Sl_containerTEM .slick-next { bottom: -12px }
+  .Sl_containerTEM .slick-prev { left: 5% }
+  .Sl_containerTEM .slick-next { right: 5%; }
+
+
+}
+    `,
+    js: `
+    jQuery(document).ready(function($){
+
+	/**Section 7***/
+	    $('.testiSlideLiTEM').slick({
+	        focusOnSelect: true,
+	        dots: false,
+	        draggable: true,
+	        centerMode: true,
+	        slidesToShow: 3,
+	        slidesToScroll: 1,
+	        autoplay: true,
+	        autoplaySpeed: 4500,
+	        responsive: [
+	        	{	
+		        	breakpoint: 850,
+		          	settings: {
+						slidesToShow: 3,
+			        	slidesToScroll: 1
+		        	}
+	        	},
+	        	{
+		        	breakpoint: 550,
+		          	settings: {
+						slidesToShow: 1,
+			        	slidesToScroll: 1
+		        	}	        		
+	        	}
+	        ]
+	    });
+	    $(window).on('resize', function() {
+	        $('.testiSlideLiTEM').slick('resize');
+	    });
+
+	/*****/
+
+})`
   },
 ];
