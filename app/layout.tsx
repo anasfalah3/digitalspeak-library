@@ -41,10 +41,10 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="forest">
       <body className={inter.className}>
-        <Analytics/>
         <Toaster />
         <ShiftingDropDown />
         {children}
+        <Analytics/>
       </body>
     </html>
   );
