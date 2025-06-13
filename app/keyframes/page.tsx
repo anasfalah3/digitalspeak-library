@@ -35,6 +35,10 @@ const keyframes = [
     name: "SmoothScale",
     keyframes: "smoothScale 4s ease-in-out infinite alternate",
   },
+  {
+    name: "Spin",
+    keyframes: "spin 4s infinite linear",
+  },
 ];
 
 const page = () => {
