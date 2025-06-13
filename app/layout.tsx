@@ -4,17 +4,17 @@ import "./globals.css";
 import "./timeline.css";
 import { ShiftingDropDown } from "./components/NavBar";
 import toast, { Toaster } from "react-hot-toast";
-
-const title = "DigitalSpeak - Helper";
-const description = "DigitalSpeak - Helper";
-const keywords = ["DigitalSpeak - Helper", "DigitalSpeak - Helper"];
+import { Analytics } from "@vercel/analytics/next"
+const title = "DigitalSpeak - Library";
+const description = "DigitalSpeak - Library of CSS and JavaScript snippets";
+const keywords = ["DigitalSpeak - Library", "DigitalSpeak - Library of CSS and JavaScript snippets", "DigitalSpeak", "Library", "CSS", "JavaScript", "Snippets"];
 export const metadata: Metadata = {
   title,
   description,
   authors: [
     {
-      name: "Mohamed Ali Naaoui",
-      url: "https://twitter.com/Med__Ali_",
+      name: "Get Funnels",
+      url: "https://getfunnels.agency",
     },
   ],
   keywords,
@@ -41,6 +41,7 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="forest">
       <body className={inter.className}>
+        <Analytics/>
         <Toaster />
         <ShiftingDropDown />
         {children}
