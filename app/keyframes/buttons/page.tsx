@@ -1,5 +1,5 @@
 "use client";
-import React, { use, useState } from "react";
+import React, { useState } from "react";
 import Card from "../components/Card";
 import "../keyframes.css";
 import Code from "../components/Code";
@@ -44,7 +44,6 @@ const page = () => {
                   keyframe={keyframe.keyframes}
                   type={keyframe.type}
                   content={keyframe.content}
-                  className={keyframe.className}
                 />
                 <button
                   className="mt-2 mb-1 px-3 py-1 rounded bg-[#222] text-xs text-white border border-[#444] hover:bg-[#333] transition"
@@ -54,7 +53,7 @@ const page = () => {
                 </button>
                 {openIndexes[index] && (
                   <pre className="bg-[#181818] text-green-400 text-xs p-2 rounded mt-2 overflow-x-auto">
-                    <code>{keyframe.css}</code>
+                    {/* <code>{keyframe.css}</code> */}
                   </pre>
                 )}
               </div>
