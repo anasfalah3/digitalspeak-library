@@ -319,7 +319,7 @@ const Blog = () => {
     <div>
       <div className="grid grid-cols-2 gap-2">
         <a href="#">
-          <img
+          <Image
             className="mb-2 h-14 w-full rounded object-cover"
             src="/imgs/blog/4.png"
             alt="Placeholder image"
@@ -331,7 +331,7 @@ const Blog = () => {
           </p>
         </a>
         <a href="#">
-          <img
+          <Image
             className="mb-2 h-14 w-full rounded object-cover"
             src="/imgs/blog/5.png"
             alt="Placeholder image"
