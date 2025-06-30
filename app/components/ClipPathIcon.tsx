@@ -18,7 +18,7 @@ const ClipPathLinks = ({ keyframe }: any) => {
     <div className="divide-y divide-neutral-900 border border-neutral-900 bg-[#292929]">
       {keyframe ? (
         <div className="grid grid-cols-3 divide-x divide-neutral-900 ">
-          <LinkBox Icon={"Images"} href="/keyframes" />
+          <LinkBox Icon={"Images"} href="/keyframes/images" />
 
           <LinkBox Icon={"Text"} href="/keyframes/text" />
           <LinkBox Icon={"Button"} href="/keyframes/buttons" />

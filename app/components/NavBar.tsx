@@ -235,7 +235,7 @@ const Products = () => {
           <h3 className="mb-2 text-sm font-medium text-white underline">
             Keyframes
           </h3>
-          <a href="/keyframes" className="mb-1 block text-sm text-white">
+          <a href="/keyframes/images" className="mb-1 block text-sm text-white">
             Images
           </a>
           <a href="/keyframes/text" className="mb-1 block text-sm text-white">
