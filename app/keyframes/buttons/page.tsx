@@ -17,7 +17,7 @@ const keyframes = [
   }, 
 ];
 
-const page = () => {
+const Page = () => {
   const [openIndexes, setOpenIndexes] = useState<{ [key: number]: boolean }>(
     {}
   );
@@ -69,4 +69,4 @@ const page = () => {
     </main>
   );
 };
-export default page;
+export default Page;

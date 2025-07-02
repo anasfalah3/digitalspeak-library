@@ -43,6 +43,10 @@ const keyframes = [
     name: "Tada",
     keyframes: "Tada 2s ease-in-out infinite",
   },
+  {
+    name: "HeartBeat",
+    keyframes: "heartBeat 4s infinite linear",
+  },
 ];
 
 const page = () => {
