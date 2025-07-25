@@ -47,6 +47,30 @@ const keyframes = [
     name: "HeartBeat",
     keyframes: "heartBeat 4s infinite linear",
   },
+  {
+    name: "Bounce",
+    keyframes: "bounce 300ms alternate infinite cubic-bezier(.2, .65, .6, 1)",
+  },
+  {
+    name: "HalfRotate",
+    keyframes: "halfRotate 5s linear infinite;",
+  },
+  {
+    name: "HorizontalMove",
+    keyframes: "horizontalMove 3s linear infinite alternate",
+  },
+  {
+    name: "verticallMove",
+    keyframes: "verticallMove 3s linear infinite alternate",
+  },
+  {
+    name: "Beat",
+    keyframes: "beat 2s linear infinite",
+  },
+  {
+    name: "Echo",
+    keyframes: "echo 2s linear infinite",
+  },
 ];
 
 const page = () => {

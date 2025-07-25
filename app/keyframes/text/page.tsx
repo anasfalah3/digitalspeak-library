@@ -9,30 +9,35 @@ const keyframes = [
     type: "text",
   },
   {
-    name: "Neon 2",
-    keyframes: "neon2 1.5s ease-in-out infinite alternate",
+    name: "letterSpacing",
+    keyframes: "letterSpacing 2s cubic-bezier(0.65, 0, 0.35, 1) alternate infinite",
     type: "text",
   },
-  {
-    name: "Neon 3",
-    keyframes: "neon3 1.5s ease-in-out infinite alternate",
-    type: "text",
-  },
-  {
-    name: "Neon 4",
-    keyframes: "neon4 1.5s ease-in-out infinite alternate",
-    type: "text",
-  },
-  {
-    name: "Neon 5",
-    keyframes: "neon5 1.5s ease-in-out infinite alternate",
-    type: "text",
-  },
-  {
-    name: "Neon 6",
-    keyframes: "neon6 1.5s ease-in-out infinite alternate",
-    type: "text",
-  },
+  // {
+  //   name: "Neon 2",
+  //   keyframes: "neon2 1.5s ease-in-out infinite alternate",
+  //   type: "text",
+  // },
+  // {
+  //   name: "Neon 3",
+  //   keyframes: "neon3 1.5s ease-in-out infinite alternate",
+  //   type: "text",
+  // },
+  // {
+  //   name: "Neon 4",
+  //   keyframes: "neon4 1.5s ease-in-out infinite alternate",
+  //   type: "text",
+  // },
+  // {
+  //   name: "Neon 5",
+  //   keyframes: "neon5 1.5s ease-in-out infinite alternate",
+  //   type: "text",
+  // },
+  // {
+  //   name: "Neon 6",
+  //   keyframes: "neon6 1.5s ease-in-out infinite alternate",
+  //   type: "text",
+  // },
 ];
 
 const page = () => {
