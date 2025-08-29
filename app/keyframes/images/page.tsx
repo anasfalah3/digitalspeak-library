@@ -71,6 +71,10 @@ const keyframes = [
     name: "Echo",
     keyframes: "echo 2s linear infinite",
   },
+  {
+    name: "Flip",
+    keyframes: "flip 5s ease-in-out forwards infinite;",
+  },
 ];
 
 const page = () => {
