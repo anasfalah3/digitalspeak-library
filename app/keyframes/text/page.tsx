@@ -13,16 +13,21 @@ const keyframes = [
     keyframes: "letterSpacing 2s cubic-bezier(0.65, 0, 0.35, 1) alternate infinite",
     type: "text",
   },
-  // {
-  //   name: "Neon 2",
-  //   keyframes: "neon2 1.5s ease-in-out infinite alternate",
-  //   type: "text",
-  // },
-  // {
-  //   name: "Neon 3",
-  //   keyframes: "neon3 1.5s ease-in-out infinite alternate",
-  //   type: "text",
-  // },
+  {
+    name: "Glow",
+    keyframes: "glow 1.5s ease-in-out infinite alternate",
+    type: "text",
+  },
+  {
+    name: "Bounce",
+    keyframes: "bounceText 2s ease infinite ",
+    type: "text",
+  },
+  {
+    name: "ColorWave",
+    keyframes: "colorWave 3s infinite",
+    type: "text",
+  },
   // {
   //   name: "Neon 4",
   //   keyframes: "neon4 1.5s ease-in-out infinite alternate",
