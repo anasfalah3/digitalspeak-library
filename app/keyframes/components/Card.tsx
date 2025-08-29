@@ -63,9 +63,9 @@ const Card = ({ keyframe, name, type, content, className }: any) => {
             style={{
               animation: keyframe,
             }}
-            className={`bg-[#27024B] text-white border px-10 py-6 uppercase border-[#444] hover:bg-[#0e011c] transition`}
+            className={`bg-[#27024B] text-white border px-10 py-6 uppercase border-[#444] transition`}
           >
-            {content || name || "Animated Button"}
+            {"DS Button"}
           </Button>
         );
       default:

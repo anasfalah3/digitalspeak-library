@@ -10,10 +10,11 @@ const keyframes = [
     keyframes: "neon1 1.5s ease-in-out infinite alternate",
     type: "button",
     content: "Click Me",
-    className: "neon-button",
-    css: `.neon-button {
-  animation: neon1 1.5s ease-in-out infinite alternate; 
-  }`,
+  }, 
+    {
+    name: "Button 2",
+    keyframes: "btnPulse 1.5s infinite ease-in-out",
+    type: "button",
   }, 
 ];
 
@@ -47,20 +48,7 @@ const Page = () => {
                   name={keyframe.name}
                   keyframe={keyframe.keyframes}
                   type={keyframe.type}
-                  content={keyframe.content}
-                  className={keyframe.className}
                 />
-                <button
-                  className="mt-2 mb-1 px-3 py-1 rounded bg-[#222] text-xs text-white border border-[#444] hover:bg-[#333] transition"
-                  onClick={() => toggle(index)}
-                >
-                  {openIndexes[index] ? "Hide CSS" : "Show CSS"}
-                </button>
-                {openIndexes[index] && (
-                  <pre className="bg-[#181818] text-green-400 text-xs p-2 rounded mt-2 overflow-x-auto">
-                    <code>{keyframe.css}</code>
-                  </pre>
-                )}
               </div>
             ))}
           </div>
