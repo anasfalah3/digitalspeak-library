@@ -72,8 +72,12 @@ const keyframes = [
     keyframes: "echo 2s linear infinite",
   },
   {
-    name: "Flip",
-    keyframes: "flip 5s ease-in-out forwards infinite;",
+    name: "FlipX",
+    keyframes: "flipX 5s ease-in-out forwards infinite;",
+  },
+  {
+    name: "FlipY",
+    keyframes: "flipY 5s ease-in-out forwards infinite;",
   },
 ];
 
