@@ -79,6 +79,10 @@ const keyframes = [
     name: "FlipY",
     keyframes: "flipY 5s ease-in-out forwards infinite;",
   },
+  {
+    name: "GrayBlurFilter",
+    keyframes: "grayBlurFilter 4s ease-in-out infinite;",
+  },
 ];
 
 const page = () => {
