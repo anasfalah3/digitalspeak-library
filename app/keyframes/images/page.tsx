@@ -73,15 +73,23 @@ const keyframes = [
   },
   {
     name: "FlipX",
-    keyframes: "flipX 5s ease-in-out forwards infinite;",
+    keyframes: "flipX 5s ease-in-out forwards infinite",
   },
   {
     name: "FlipY",
-    keyframes: "flipY 5s ease-in-out forwards infinite;",
+    keyframes: "flipY 5s ease-in-out forwards infinite",
   },
   {
     name: "GrayBlurFilter",
-    keyframes: "grayBlurFilter 4s ease-in-out infinite;",
+    keyframes: "grayBlurFilter 4s ease-in-out infinite",
+  },
+  {
+    name: "RotateFromBottom",
+    keyframes: "rotateFromBottom 4s 2s infinite alternate",
+  },
+  {
+    name: "Pound",
+    keyframes: "pound .5s infinite",
   },
 ];
 
