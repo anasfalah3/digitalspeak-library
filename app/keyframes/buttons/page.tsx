@@ -11,9 +11,24 @@ const keyframes = [
     type: "button",
     content: "Click Me",
   }, 
-    {
+  {
     name: "Button 2",
     keyframes: "btnPulse 1.5s infinite ease-in-out",
+    type: "button",
+  }, 
+  {
+    name: "Button 3",
+    keyframes: "btnBounce 1.5s infinite ease-in-out",
+    type: "button",
+  }, 
+  {
+    name: "Button 4",
+    keyframes: "btnShake 1.5s infinite ease-in-out",
+    type: "button",
+  }, 
+  {
+    name: "Button 5",
+    keyframes: "btnBorderGlow 1.5s infinite ease-in-out",
     type: "button",
   }, 
 ];
